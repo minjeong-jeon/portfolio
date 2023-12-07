@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script defer src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <link href="style.css" rel="stylesheet" />
-    <title>Minjeong Jeon - Resume</title>
+    <title>Minjeong Jeon - Website</title>
 </head>
 
-    <body>
-        <header>
-            <nav class="leftnav">
-                <a href="#About_Me">About Me</a>
-                <a href="#Education">Education</a>
-                <a href="#Work_Experience">Work Experience</a>
-                <a href="#Portfolio">Portfolio</a>
+<body>
+    <div class="top-menu">
+        <ul>
+            <li><a href="#About_Me">About Me</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Work_Experience">Work Experience</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+        </ul>
+    </div>
+</body>
+</header>
 
-    </nav>
-        <div class="contact-info">
-            <p class="light font">Minjeong Jeon</p>
-            <p class="light font">UX/UI Designer</p>
-            <p class="light font">jmj9626@gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/minjeong-jeon-853232209/" target="_blank">Contact to Minjeong</a></li>
-        </div>
-            </nav>
-        </header>
-
-        <div class="content">
-            <div class="content-padding">
-    <img src="./images/MinjeongJeon_Photo(1080x1600).jpg" alt="Profile Photo" class="right-image">
+    <div class="content">
+    <div class="content-padding">
+    <img src="./images/MinjeongJeon_Photo(1080x1600).jpg" alt="Profile Photo" class="left-image">
     </body>  
-     
-    
-<br>
 
     <!--
         You're reading. Do you want to be my friend?
     -->
-<br> 
        
     <section>
         <h1 id="About_Me"></h1>
         <p class="pClass">
-            <h1>Hello. My name is</h1>
-            <h2>MINJEONG
-                JEON</h2>
-            <h3>I am a User Experience and User Interface designer<br>
+            <button id="btn-alert">Hello</button>
+            <h1>My name is</h1>
+            <h2>MINJEONG JEON</h2>
+            <p class="description"></p>
+                I am a User Experience and User Interface designer<br>
                 who is dedicated to solving complex problems<br>
                 by gaining a deep understanding of the people<br>
-                around me and the worlds they live in.</h3>
-    </p>
+                around me and the worlds they live in.
+        </p>
     </section>
 
     <div class="social-links">
@@ -59,31 +51,22 @@
         <span class="space"> </span> 
         <a href="https://www.youtube.com/channel/UCT4iWrChX4TstQGW0wuNPhQ" target="_blank">YOUTUBE</a>
     </div>
-
-    <br>
+    <button id="hoverButton">You know what?</button>
 
     <section>
         <h2 id="Education"></h2>
         <div class="education-container">
             <div class="education-box">
                 <img src="./images/education.png" alt="SAIT">
-                <h4>SAIT, Canada</h4>
-                <h5>Diploma, Interactive Design-User Experience</h5>
-                <p>September 2023 - May 2025</p>   
-            </div>
-        <div class="education-container">
-            <div class="education-box">
-                <img src="./images/education.png" alt="DANKOOK">
-                <h4>Dankook University, Republic of Korea</h4>
-                <h5>Bachelor, Psychology</h5>
-                    <p>March 2015 - February 2020</p>
-                </div>
+                <h4>SAIT, Canada | Diploma, Interactive Design-User Experience</h4>
+                <h5>September 2023 - May 2025</h5>
+                <br> 
+                <h4>Dankook University, Republic of Korea | Bachelor, Psychology</h4>
+                <h5>March 2015 - February 2020</h5>
             </div>
         </section>
 
 
-
-<br>
     <section>
         <h6 id="Work_Experience">Work Experience</h6>
         <ul>
@@ -106,33 +89,32 @@
 
         </ul>
     </section>
-<br>
 
     <section id="Portfolio">
         <h2>Portfolio</h2>
-
-        <!-- Add two horizontal portfolio boxes with links and div wrappers -->
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <a href="https://www.behance.net/gallery/183542603/HoneyZoy">
-                    <img src="./images/Honeyzoy_Thumbnail_500_1000.png" alt="Portfolio 1">
-                    <h3>HoneyZoy | UXUI Design</h3>
-                </a>
-            </div>
-            <br>
-            <div class="portfolio-box">
-                <a href="https://www.behance.net/gallery/123888577/Healthplan-App">
-                    <img src="./images/HealthPlan_Thumbnail_500_1000.png" alt="Portfolio 2">
-                    <h3>HealthPlan | UXUI Design</h3>
+                <a href="https://jmj9626.myportfolio.com/work">
+                    <img src="./images/Graphic_1.png" alt="Portfolio">
+                    <h3>Portfolio website</h3>
                 </a>
             </div>
         </div>
     </section> 
-<br>
 
-    <footer>
-        <p>&copy; 2023 Minjeong Jeon</p>
-        </ul>
-    </footer>
+<footer id="footer">
+    <p>&copy; Minjeong Jeon <span id="currentYear"></span></p>
+    <div class="contact-info">
+        <p class="light font">Minjeong Jeon | UXUI Designer | jmj9626@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/minjeong-jeon-853232209/" target="_blank">Contact to Minjeong</a></li>
+    </div>
+</footer>
+<script scr="script.js"></script>
+
+<p id="txt-counter">Number: 1</p>
+<button id="btn-decrement"><i class="fas fa-arrow-left">-</i></button>
+<button id="btn-increment"><i class="fas fa-arrow-right">+</i></button>
+<ol id="numbers"></ol>
+
 </body>
 </html>
